@@ -1,5 +1,5 @@
 # Advanced Calculator created by Ash - V1 [Alpha]
-# Most recet replit Python version used as of November, 2021
+# Most recent replit Python version used as of November, 2021
 # Uses import function and other functions not found in Python 2
 # Requires at least Python 3 or higher
 # Great for Integrated II+ math requiring scientific calculator
