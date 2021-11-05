@@ -25,6 +25,7 @@ while True:
     print('03 - tan^-1')
     print('04 - cos^-1')
     print('05 - sin^-1')
+    print('06 - pi')
     print('i - info')
     operation = input('Value: ')
     if operation == '1':
@@ -106,9 +107,11 @@ while True:
             print('The sin^-1 for this number of degrees is', de, '.')
         else:
             print('Degree(s) must be within range -1 to 1.')
+    elif operation == "06":
+        print('The number pi is', math.pi, '.')
     elif operation == "i":
         print(
-            "Created by: Ash Version: 1.0.0.0.2 Last updated: Thursday, November 4th, 2021 at 3:20 PM PDT Python 3.8.2 Feb 26, 2020 02:56:10"
+            "Created by: Ash Version: 1.0.0.0.2 Last updated: Thursday, November 4th, 2021 at 7:56 PM PDT Python 3.8.2 Feb 26, 2020 02:56:10"
         )
     else:
         print('Value not found.')
