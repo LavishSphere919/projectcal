@@ -63,10 +63,6 @@ while True:
     elif operation == "8":
         numbe = input('Please enter the value: ')
         print(frac(numbe))
-    elif operation == "i":
-        print(
-            "Created by: Ash Version: 1.0.0.0.2 Last updated: Thursday, November 4th, 2021 at 3:20 PM PDT Python 3.8.2 Feb 26, 2020 02:56:10"
-        )
     elif operation == "9":
         num = float(input('Please enter a number to find the cube root: '))
         root2 = num**(1 / 3)
@@ -110,5 +106,9 @@ while True:
             print('The sin^-1 for this number of degrees is', de, '.')
         else:
             print('Degree(s) must be within range -1 to 1.')
+    elif operation == "i":
+        print(
+            "Created by: Ash Version: 1.0.0.0.2 Last updated: Thursday, November 4th, 2021 at 3:20 PM PDT Python 3.8.2 Feb 26, 2020 02:56:10"
+        )
     else:
         print('Value not found.')
