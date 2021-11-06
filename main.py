@@ -3,30 +3,36 @@
 # Uses import function and other functions not found in Python 2
 # Requires at least Python 3 or higher
 # Great for Integrated II+ math requiring scientific calculator
+import os
 import math
 from fractions import Fraction as frac
+import pytz
+from datetime import datetime
 
 print('Welcome to the Calculator!')
 while True:
-    print('1 - addition')
-    print('2 - division')
-    print('3 - multiplication')
-    print('4 - subtraction')
-    print('5 - square root')
-    print('6 - exponentiation')
-    print('7 - percent-number')
-    print('8 - fraction')
-    print('9 - cube root')
-    print('0 - nth root')
-    print('10 - number-percent')
-    print('00 - sin')
-    print('01 - cos')
-    print('02 - tan')
-    print('03 - tan^-1')
-    print('04 - cos^-1')
-    print('05 - sin^-1')
-    print('06 - pi')
-    print('i - info')
+    print(' 1 - addition')
+    print(' 2 - division')
+    print(' 3 - multiplication')
+    print(' 4 - subtraction')
+    print(' 5 - square root')
+    print(' 6 - exponentiation')
+    print(' 7 - percent-number')
+    print(' 8 - fraction')
+    print(' 9 - cube root')
+    print(' 0 - nth root')
+    print(' 10 - number-percent')
+    print(' 00 - sin')
+    print(' 01 - cos')
+    print(' 02 - tan')
+    print(' 03 - tan^-1')
+    print(' 04 - cos^-1')
+    print(' 05 - sin^-1')
+    print(' 06 - pi')
+    print(' time - date/time')
+    print(' i - info')
+    print(' end - break')
+    print(' clr - clear')
     operation = input('Value: ')
     if operation == '1':
         addendA = float(input('Please enter the first addend: '))
@@ -109,9 +115,18 @@ while True:
             print('Degree(s) must be within range -1 to 1.')
     elif operation == "06":
         print('The number pi is', math.pi, '.')
+    elif operation == "time":
+        tz = pytz.timezone('US/Pacific')
+        Pacific_now = datetime.now(tz)
+        print(Pacific_now,'PT (US/Pacific)')
     elif operation == "i":
         print(
             "Created by: Ash Version: 1.0.0.0.2 Last updated: Thursday, November 4th, 2021 at 7:56 PM PDT Python 3.8.2 Feb 26, 2020 02:56:10"
         )
+    elif operation == "end":
+        print('Thank you for using our service!')
+        break
+    elif operation == "clr":
+        os.system('clear')
     else:
         print('Value not found.')
