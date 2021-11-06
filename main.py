@@ -121,7 +121,7 @@ while True:
         print(Pacific_now,'PT (US/Pacific)')
     elif operation == "i":
         print(
-            "Created by: Ash Version: 1.0.0.0.2 Last updated: Thursday, November 4th, 2021 at 7:56 PM PDT Python 3.8.2 Feb 26, 2020 02:56:10"
+            "Created by: Ash Version: 1.0.0.0.3 Last updated: Thursday, November 4th, 2021 at 7:56 PM PDT Python 3.8.2 Feb 26, 2020 02:56:10"
         )
     elif operation == "end":
         print('Thank you for using our service!')
