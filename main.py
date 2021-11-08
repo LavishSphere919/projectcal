@@ -3,6 +3,8 @@
 # Uses import function and other functions not found in Python 2
 # Requires at least Python 3 or higher
 # Great for Integrated II+ math requiring scientific calculator
+# This code may be slow, please give it time to download the packager files
+
 import os
 import math
 from fractions import Fraction as frac
