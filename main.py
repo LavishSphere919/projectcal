@@ -120,7 +120,7 @@ while True:
     elif operation == "time":
         tz = pytz.timezone('US/Pacific')
         Pacific_now = datetime.now(tz)
-        print(Pacific_now,'PT (US/Pacific)')
+        print(Pacific_now, 'PT (US/Pacific)')
     elif operation == "i":
         print(
             "Created by: Ash Version: 1.0.0.0.3 Last updated: Thursday, November 4th, 2021 at 7:56 PM PDT Python 3.8.2 Feb 26, 2020 02:56:10"
