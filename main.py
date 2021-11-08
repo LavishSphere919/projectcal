@@ -10,9 +10,12 @@ import math
 from fractions import Fraction as frac
 import pytz
 from datetime import datetime
+name = str(input('Please enter your name to join the service: '))
+age = int(input('Please enter your age to continue: '))
 
 print('Welcome to the Calculator!')
 while True:
+    print ('Welcome back,', name, age,'.')
     print(' 1 - addition')
     print(' 2 - division')
     print(' 3 - multiplication')
